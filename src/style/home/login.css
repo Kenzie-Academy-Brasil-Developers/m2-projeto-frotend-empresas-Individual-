@@ -1,0 +1,116 @@
+.container__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../../img/img_menu-full.svg");
+
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.726);
+
+    width: 100%;
+    height: 450px; 
+
+    margin-top: 80px;
+}
+
+.form > div {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+
+    width: 90%;
+}
+
+.form > div > h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+.form > div > p {
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+}
+
+.form > div input {
+    border: none;
+
+    font-size: 1.125rem;
+}
+
+.form > div input::placeholder {
+    padding-left: 10px;
+}
+
+.login-password > button, .form > div input {
+    width: 100%;
+    height: 48px;
+
+    font-family: "Inter", sans-serif;
+}
+
+.login-password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.login, .registration {
+    font-size: 1.125rem;
+    font-weight: bold;
+
+    border: solid 1px var(--blue);
+
+    cursor: pointer;
+}
+
+
+.login {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.registration {
+    color: var(--blue);
+    background-color: var(--white);
+}
+
+.login:focus {
+    color: var(--blue);
+    background-color: var(--white);
+}
+
+.registration:focus {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+@media (min-width: 768px) {
+    .form {
+        width: 506px;
+        height: 480px;
+    
+        background-color: rgba(255, 255, 255, 0.89);
+      }
+      .form > div {
+        gap: 15px
+      }
+      .form > div > h2 {
+        margin-bottom: 15px;
+      }
+      .form > div > p {
+        margin-bottom: 15px;
+      }
+}

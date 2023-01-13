@@ -1,0 +1,511 @@
+.container__modal {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vmax;
+
+  z-index: 2;
+
+  background-color: rgba(70, 35, 167, 0.13);
+}
+
+.sticky {
+  position: relative;
+
+  height: 100%;
+}
+
+.modal {
+  position: sticky;
+  top: 30px;
+
+  width: 857px;
+  height: 580px;
+
+  border: solid 1px var(--white);
+
+  background-color: var(--white);
+}
+
+.modal > img {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+
+  cursor: pointer;
+}
+
+.modal > h2 {
+  margin: 50px 3%;
+
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.section--top {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 3%;
+}
+
+.top__department {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+.top__department > p {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.top__department > span {
+  font-size: 1.125rem;
+}
+
+.get__user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 30px;
+}
+
+.get__user > select {
+  width: 422px;
+  height: 52px;
+
+  cursor: pointer;
+}
+
+.get__user > button {
+  width: 157px;
+  height: 48px;
+
+  background-color: var(--green);
+  color: var(--white);
+  border: solid 1px var(--green);
+
+  font-size: 1.125rem;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.get__user > button:focus {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.section--bottom {
+  width: 100%;
+}
+
+.section--bottom > div {
+  display: flex;
+
+  overflow-x: scroll;
+}
+
+.users--modal {
+  min-width: 306px;
+  height: 196px;
+}
+
+.dismiss {
+  width: 157px;
+  height: 48px;
+
+  font-size: 1.125rem;
+  font-weight: bold;
+
+  background-color: var(--white);
+  color: var(--red);
+  border: solid 1px var(--red);
+
+  cursor: pointer;
+}
+
+.dismiss:focus {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.toHire {
+  width: 157px;
+  height: 48px;
+
+  font-size: 1.125rem;
+  font-weight: bold;
+
+  background-color: var(--white);
+  color: var(--green);
+  border: solid 1px var(--green);
+
+  cursor: pointer;
+}
+
+.toHire:focus {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.modal__create {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--white);
+
+  position: sticky;
+  top: 60px;
+
+  width: 506px;
+  height: 402px;
+  padding: 30px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  cursor: pointer;
+}
+
+.modal__create > h2 {
+  margin: 30px 3%;
+
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.create__department--form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.create__department--form input,
+.create__department--form select,
+.create__department--form button {
+  height: 52px;
+}
+
+.create__department--form input,
+.create__department--form select {
+  border: solid 1px #b3b3b3;
+  background-color: var(--white);
+
+  font-size: 1.0625rem;
+}
+
+.create__department--form input::placeholder {
+  padding-left: 10px;
+}
+
+.create__department--form button {
+  border: solid 1px var(--blue);
+  background-color: var(--blue);
+  color: var(--white);
+
+  font-size: 1.125rem;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.modal--edit__department {
+  display: flex;
+  flex-direction: column;
+
+  gap: 25px;
+
+  background-color: var(--white);
+
+  position: sticky;
+  top: 80px;
+
+  width: 550px;
+  height: 370px;
+}
+
+.close__edit {
+  cursor: pointer;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal--edit__department > h2 {
+  margin: 30px 8% 0 8%;
+
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.description__edit,
+.submit__save {
+  margin: 0 8%;
+}
+
+.description__edit {
+  border: solid 1px #bdbdbd;
+
+  font-size: 1.0625rem;
+  font-family: "Inter", sans-serif;
+}
+
+.description__edit::placeholder {
+  padding: 3%;
+}
+
+.submit__save {
+  border: solid 1px var(--blue);
+  background-color: var(--blue);
+  color: var(--white);
+
+  font-size: 1.125rem;
+  font-weight: bold;
+
+  height: 48px;
+
+  cursor: pointer;
+}
+
+.modal__delete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+
+  background-color: var(--white);
+
+  position: sticky;
+  top: 100px;
+
+  width: 733px;
+  height: 342px;
+}
+
+.close__delete {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  cursor: pointer;
+}
+.modal__delete > h2 {
+  width: 500px;
+
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.submit__delete {
+  border: solid 1px var(--green);
+  background-color: var(--green);
+  color: var(--white);
+
+  font-size: 1.125rem;
+  font-weight: bold;
+
+  width: 422px;
+  height: 48px;
+
+  cursor: pointer;
+}
+
+.submit__delete:focus {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.modal--edit__user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 30px;
+
+  position: sticky;
+  top: 100px;
+
+  width: 506px;
+  height: 342px;
+
+  background-color: var(--white);
+}
+
+.close--edit__user {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  cursor: pointer;
+}
+
+.modal--edit__user > h2 {
+  margin-left: 7.5%;
+
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.form--select {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+#select__modality__of__work,
+#select__professional__level,
+.button__edit {
+  width: 422px;
+  height: 52px;
+
+  color: #808080;
+
+  border: solid 1px #b3b3b3;
+}
+
+.button__edit {
+  border: solid 1px var(--blue);
+  background-color: var(--blue);
+  color: var(--white);
+
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.button__edit:focus {
+  color: var(--blue);
+  background-color: var(--white);
+}
+
+.modal--delete__user {
+  background-color: var(--white);
+
+  position: sticky;
+  top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 30px;
+
+  width: 733px;
+  height: 292px;
+}
+
+.close__delete__user {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  cursor: pointer;
+}
+
+.modal--delete__user > h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+
+  text-align: center;
+
+  width: 480px;
+}
+
+.delete {
+  width: 419px;
+  height: 48px;
+
+  font-size: 1.125rem;
+  font-weight: bold;
+
+  color: var(--white);
+  background-color: var(--green);
+  border: solid 1px var(--green);
+
+  cursor: pointer;
+}
+
+.delete:focus {
+  color: var(--green);
+  background-color: var(--white);
+}
+
+.container__edit__profile {
+  position: sticky;
+  top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+
+  width: 506px;
+  height: 421px;
+
+  background-color: var(--white);
+}
+
+.close__modal--edit__profile {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  cursor: pointer;
+}
+
+.container__edit__profile > h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.form__edit__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.form__edit__profile input,
+.form__edit__profile button {
+  width: 422px;
+  height: 52px;
+
+  border: solid 1px #b3b3b3;
+  color: #808080;
+}
+
+.form__edit__profile input::placeholder {
+  padding: 3%;
+}
+
+.form__edit__profile button {
+  background-color: var(--blue);
+  border: solid 1px var(--blue);
+  color: var(--white);
+
+  cursor: pointer;
+}
+
+.form__edit_profile button:focus {
+  background-color: var(--white);
+  color: var(--blue);
+}

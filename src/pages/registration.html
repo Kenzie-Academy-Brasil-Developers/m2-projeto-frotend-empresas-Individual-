@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/global/reset.css" />
+    <link rel="stylesheet" href="../style/global/globalStyle.css" />
+    <link rel="stylesheet" href="../style/global/header.css" />
+    <link rel="stylesheet" href="../style/home/registration.css" />
+    <link rel="stylesheet" href="../style/global/message.css">
+    <title>Kenzie Empresas Registration</title>
+  </head>
+  <body>
+    <header class="container__header">
+      <div class="header--nav">
+        <h1><img src="../img/Ellipse_1.svg" alt="" /> Kenzie Empresas</h1>
+        <img class="menu" src="../img/menu.svg" alt="" />
+      </div>
+      <nav class="container__nav">
+        <button class="nav--button nav--button-1">Home</button>
+        <button class="nav--button nav--button-2">Login</button>
+      </nav>
+    </header>
+    <main class="container__main">
+      <!-- <img class="image" src="./../img/img_menu-full.svg" alt=""> -->
+      <form class="form">
+        <div>
+          <h2 class="title__form">Cadastre-se</h2>
+          <input class="name" type="text" placeholder="Seu nome" />
+          <input class="email" type="email" placeholder="Seu e-mail" />
+          <input class="password" type="password" placeholder="Sua senha" />
+          <select class="select" name="profissional">
+            <option value="">Nível Profissional</option>
+            <option value="estágio">Estágiario</option>
+            <option value="júnior">Junior</option>
+            <option value="pleno">Pleno</option>
+            <option value="sênior">Sênior</option>
+          </select>
+          <button class="register">Cadastre-se</button>
+          <button class="return">Retornar</button>
+        </div>
+      </form>
+    </main>
+    <script type="module" src="../script/home/registration.js"></script>
+  </body>
+</html>

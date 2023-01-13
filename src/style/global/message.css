@@ -1,0 +1,31 @@
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 500px;
+    height: 90px;
+
+    position: absolute;
+    top: 40px;
+    left: 30%;
+
+   z-index: 2;
+
+   animation: animation 1s ease;
+}
+
+.message > p {
+    color: var(--white);
+
+    font-size: 1.25rem;
+}
+
+@keyframes animation {
+    0% {
+        top: -100px
+    }
+    100% {
+        top: 40px
+    }
+}

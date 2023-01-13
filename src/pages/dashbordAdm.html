@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/global/reset.css" />
+    <link rel="stylesheet" href="../style/global/globalStyle.css" />
+    <link rel="stylesheet" href="../style/global/header.css" />
+    <link rel="stylesheet" href="../style/dashbord/admin.css" />
+    <link rel="stylesheet" href="../style/global/message.css">
+    <link rel="stylesheet" href="../style/dashbord/modal.css">
+    <title>Kenzie Empresas - ADM</title>
+  </head>
+  <body>
+    <header class="container__header">
+      <div class="header--nav">
+        <h1><img src="../img/Ellipse_1.svg" alt="" /> Kenzie Empresas</h1>
+        <img class="menu" src="../img/menu.svg" alt="" />
+      </div>
+      <nav class="container__nav">
+        <button class="nav--button nav--button-1">Logout</button>
+        <button class="nav--button nav--button-2">Home</button>
+      </nav>
+    </header>
+    <main class="container__main">
+      <div class="container">
+        <div class="div__select--company">
+          <h2>Departamentos</h2>
+          <select id="select__company">
+            <option value="select">Selecione Empresa</option>
+          </select>
+          <button class="create">+ criar</button>
+        </div>
+        <section class="section__department"></section>
+        <h2>Usurios cadastrados</h2>
+        <section class="section__user"></section>
+      </div>
+    </main>
+    <script type="module" src="../script/dashbord/admin.js"></script>
+  </body>
+</html>
