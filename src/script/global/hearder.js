@@ -13,17 +13,17 @@ export function clickMenu(menu, nav) {
 }
 
 export function clickLogin() {
-  window.location.replace("/src/pages/login.html");
+  window.location.replace("/m2-projeto-frotend-empresas-Individual-/src/pages/login.html");
 }
 
 export function clickRegistration() {
-  window.location.replace("/src/pages/registration.html");
+  window.location.replace("/m2-projeto-frotend-empresas-Individual-/src/pages/registration.html");
 }
 
 export function clickHome() {
-  window.location.replace("/");
+  window.location.replace("/m2-projeto-frotend-empresas-Individual-/");
 }
 
 export function clickLogout() {
-  window.location.replace("/src/pages/login.html");
+  window.location.replace("/m2-projeto-frotend-empresas-Individual-/src/pages/login.html");
 }
