@@ -13,7 +13,7 @@ export function clickMenu(menu, nav) {
 }
 
 export function clickLogin() {
-  window.location.replace("/m2-projeto-frotend-empresas-Individual-/src/pages/login.html");
+   window.location.replace("../../../src/pages/login.html");
 }
 
 export function clickRegistration() {
@@ -25,5 +25,5 @@ export function clickHome() {
 }
 
 export function clickLogout() {
-  window.location.replace("/m2-projeto-frotend-empresas-Individual-/src/pages/login.html");
+  window.location.replace("../../../src/pages/login.html");
 }
