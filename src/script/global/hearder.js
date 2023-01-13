@@ -12,12 +12,24 @@ export function clickMenu(menu, nav) {
   }
 }
 
+
+
 export function clickLogin() {
-   window.location.replace("../../../src/pages/login.html");
+  let verf = window.location.pathname;
+  if (verf.includes("/m2-projeto-frotend-empresas-Individual-")){
+     window.location.replace("/m2-projeto-frotend-empresas-Individual-/src/pages/login.html");
+  } else {
+    window.location.replace("/src/pages/login.html")
+  }
 }
 
 export function clickRegistration() {
-  window.location.replace("/m2-projeto-frotend-empresas-Individual-/src/pages/registration.html");
+  let verf = window.location.pathname;
+  if (verf.includes("/m2-projeto-frotend-empresas-Individual-")){
+     window.location.replace("/m2-projeto-frotend-empresas-Individual-/src/pages/registration.html");
+  } else {
+    window.location.replace("/src/pages/registration.html")
+  }
 }
 
 export function clickHome() {
@@ -25,5 +37,10 @@ export function clickHome() {
 }
 
 export function clickLogout() {
-  window.location.replace("../../../src/pages/login.html");
+  let verf = window.location.pathname;
+  if (verf.includes("/m2-projeto-frotend-empresas-Individual-")){
+     window.location.replace("/m2-projeto-frotend-empresas-Individual-/src/pages/login.html");
+  } else {
+    window.location.replace("/src/pages/login.html")
+  }
 }
