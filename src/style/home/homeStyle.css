@@ -59,7 +59,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
 
-    overflow-x: scroll;
+    overflow-y: scroll;
     
     width: 90%;
 }
