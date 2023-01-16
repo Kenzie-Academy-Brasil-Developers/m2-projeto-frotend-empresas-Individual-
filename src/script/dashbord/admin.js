@@ -199,6 +199,7 @@ function eventRenderModalCreateDepartment() {
       await createDepartment(creator);
 
       messageAlert("Departamento adicionado com sucesso!", "green");
+      
       setTimeout(() => {
         document.querySelector(".container__modal").remove();
 
@@ -272,12 +273,15 @@ async function eventRenderModalDeleteDepartment() {
       const buttonDelete = document.querySelector(".submit__delete");
 
       buttonDelete.addEventListener("click", async () => {
-        console.log(await deleteDepartment(departments[index].uuid))
+        await deleteDepartment(departments[index].uuid)
 
-        setTimeout(() => window.location.replace("/src/pages/dashbordAdm.html"),500)
+        messageAlert("Departamento deletado", "green")
+
+        setTimeout(() => window.location.replace("/src/pages/dashbordAdm.html"),2000)
       })
 
       const close = document.querySelector(".close__delete");
+
 
       close.addEventListener("click", () => {
         const modal = document.querySelector(".container__modal");
@@ -331,9 +335,11 @@ function eventRenderModalEditUser() {
 
             await editUser(body, user.uuid);
 
+            messageAlert("Usuário editado com sucesso!", "green")
+
             setTimeout(
               () => window.location.replace("/src/pages/dashbordAdm.html"),
-              500
+              2000
             );
 
             console.log(body);
@@ -367,13 +373,15 @@ function eventRenderModalDeleteUser() {
 
         await deleteUser(users[index].uuid);
 
+        messageAlert("Usuário deletado!", "green")
+
         setTimeout(() => {
           const modal = document.querySelector(".container__modal");
 
           modal.remove();
 
           window.location.replace("/src/pages/dashbordAdm.html");
-        }, 1000);
+        }, 2000);
       });
     });
   });

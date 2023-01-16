@@ -6,6 +6,7 @@ import {
   getColleagues,
 } from "../home/request.js";
 import { renderModalEditProfile } from "../dashbord/modal.js";
+import { messageAlert } from "../global/message.js";
 
 async function typeUser() {
   let isAdmin = await requestTypeUser();
@@ -103,9 +104,11 @@ function eventRenderModalEditProfile() {
         email: email.value,
       });
 
+      messageAlert("Perfil editado com sucesso", "green")
+
       setTimeout(
         () => window.location.replace("/src/pages/dashbordUser.html"),
-        500
+        2000
       );
     });
 

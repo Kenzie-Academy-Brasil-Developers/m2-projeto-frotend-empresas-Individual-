@@ -10,5 +10,12 @@ export function messageAlert(message, color) {
   pMessage.innerText = message;
 
   divMessage.appendChild(pMessage);
-  body.appendChild(divMessage);
+
+  const modal = document.querySelector(".container__modal");
+
+  if(modal) {
+    modal.appendChild(divMessage);
+  } else {
+    body.appendChild(divMessage);
+  }
 }
